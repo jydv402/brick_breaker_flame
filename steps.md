@@ -11,6 +11,7 @@ flowchart TD
     id6(Create the ball component)
     id7(Add the ball component to the world and give random motion for now)
     id8(Trying to add collision detection for the ball)
+    id9(Add a BAT component)
 
 
     id1 --> id2
@@ -19,7 +20,7 @@ flowchart TD
     id4 --> id5
     id5 --> id6
     id6 --> id7
-    id7 --> id8
+    id7 --> id8 --> id9
 
 ```
 
