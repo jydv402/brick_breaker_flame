@@ -14,13 +14,7 @@ flowchart TD
     id9(Add a BAT component)
 
 
-    id1 --> id2
-    id2 --> id3
-    id3 --> id4
-    id4 --> id5
-    id5 --> id6
-    id6 --> id7
-    id7 --> id8 --> id9
+    id1 --> id2 --> id3 --> id4 --> id5 --> id6 --> id7 --> id8 --> id9
 
 ```
 
