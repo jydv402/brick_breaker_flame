@@ -11,14 +11,16 @@ flowchart TD
     id6(Create the ball component)
     id7(Add the ball component to the world and give random motion for now)
     id8(Trying to add collision detection for the ball)
-    id9(Add a BAT component)
+    id9(Create a BAT component)
+    id10(Add the BAT component to the WORLD)
 
 
-    id1 --> id2 --> id3 --> id4 --> id5 --> id6 --> id7 --> id8 --> id9
+    id1 --> id2 --> id3 --> id4 --> id5 --> id6 --> id7 --> id8 --> id9 --> id10
 
 ```
 
 
 # Notes
 - Where Flutter has `Widgets`, Flame has `Components`. Where Flutter apps consist of creating trees of widgets, Flame games consist of maintaining trees of components.
-- The background/PlayArea is a `RectangleComponent` and the Ball is a `CircleComponent
+- The background/PlayArea is a `RectangleComponent` and the Ball is a `CircleComponent`
+- For collision -> First, the code tests if the `Ball` collided with `PlayArea`. This seems redundant for now, as there are no other components in the game world. That will change in the next step, when you add a bat to the world. Then, it also adds an else condition to handle when the ball collides with things that aren't the bat. A gentle reminder to implement remaining logic, if you will.
