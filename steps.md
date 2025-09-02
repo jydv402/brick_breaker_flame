@@ -13,6 +13,7 @@ flowchart TD
     id8(Trying to add collision detection for the ball)
     id9(Create a BAT component)
     id10(Add the BAT component to the WORLD)
+    id11(Create the Brick components)
 
 
     id1 --> id2 --> id3 --> id4 --> id5 --> id6 --> id7 --> id8 --> id9 --> id10
