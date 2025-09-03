@@ -32,3 +32,4 @@ The project has a clear directory structure for organizing its components:
     * `score_card.dart`: A widget to display the current score.
 
 ***
+## (**Steps followed**)[steps.md]
