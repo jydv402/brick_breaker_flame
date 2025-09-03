@@ -49,7 +49,14 @@ class Ball extends CircleComponent
       } else if (intersectionPoints.first.y >= game.height) {
         // velocity.y = -velocity.y;
         // removeFromParent();
-        add(RemoveEffect(delay: 0.35));
+        add(
+          RemoveEffect(
+            delay: 0.35,
+            onComplete: () {
+              game.playState = PlayState.gameOver;
+            },
+          ),
+        );
       }
     } else if (other is Bat) {
       velocity.y = -velocity.y;
